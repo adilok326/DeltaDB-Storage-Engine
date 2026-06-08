@@ -1,2 +1,12 @@
-# DeltaDB-Storage-Engine
-A crash-resilient, key-value storage engine featuring an in-memory hash index for $O(1)$ reads, append-only Write-Ahead Logging (WAL) for ACID durability, and automated log compaction via hybrid snapshotting.
+# DeltaDB: Crash-Resilient Key-Value Storage Engine
+
+🤖 **Built from scratch in Python** | ⚡ **O(1) Memory Performance** | 🛡️ **ACID Durability**
+
+---
+
+![DeltaDB System Architecture](architecture_banner.png)
+
+---
+
+## 🚀 Overview
+DeltaDB is a high-performance, crash-resilient key-value storage engine engineered from the ground up to handle rapid data mutations safely. By decoupling the volatile memory layer from persistent disk storage, the engine delivers lightning-fast database performance while maintaining strict data durability guarantees.
