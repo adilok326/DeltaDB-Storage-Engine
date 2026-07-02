@@ -11,8 +11,6 @@ class DeltaDB:
         self.wal_path = os.path.join(data_dir, "wal.txt")
         self.snapshot_path = os.path.join(data_dir, "snapshot.json")
         self.wal_entry_count = 0
-        
-        # Ensure data directory exists
         os.makedirs(data_dir, exist_ok=True)
         
         # System Boot Protocol: Load Snapshot first, then replay WAL
