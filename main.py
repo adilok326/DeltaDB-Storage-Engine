@@ -1,7 +1,6 @@
 from src.engine import DeltaDB
 
 if __name__ == "__main__":
-    # Max WAL entries set low (5) to easily demonstrate auto-compaction during testing
     db = DeltaDB(max_wal_entries=5)
     print("--- DeltaDB Storage Engine (v2.0 Production-Ready) ---")
     print("Commands: SET <key> <val> | GET <key> | DEL <key> | SNAPSHOT | EXIT\n")
